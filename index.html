@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Prime Academy</title>
+
+  <link href="app.css" rel="stylesheet" type="text/css">
+  <!-- AngularJS 1.3.16 -->
+  <script src="angular.min.js"></script>
+  <script src="app.js"></script>
+
+</head>
+<body ng-app="primeApp" class="scopeBorder">
+	<div ng-controller="MainController">
+		<input ng-model ="name" type="text" placeholder="name"/>
+		Hello {{name|lowercase}}!
+
+		<ol ng-show='true'>
+			<li ng-repeat="name in list"> {{name}} Simpson</li>
+		</ol>
+		<button ng-click='myClick()'>My Button</button>
+		
+
+	</div>
+	
+	
+</body>
+</html>
